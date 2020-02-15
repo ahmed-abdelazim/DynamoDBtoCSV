@@ -31,11 +31,11 @@ if (!program.table) {
   process.exit(1);
 }
 
-if (program.region && AWS.config.credentials) {
+/*if (program.region && AWS.config.credentials) {
   AWS.config.update({ region: program.region });
 } else {
   AWS.config.loadFromPath(__dirname + "/config.json");
-}
+}*/
 
 if (program.endpoint) {
   AWS.config.update({ endpoint: program.endpoint });
